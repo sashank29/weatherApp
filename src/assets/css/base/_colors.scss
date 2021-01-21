@@ -1,0 +1,43 @@
+$colors-list: ("gray": $light-gray,
+    "default": $default-color,
+    "cello": $cello-color,
+    "primary": $primary-color,
+    "success": $success-color,
+    "warning": $warning-color,
+    "danger": $danger-color,
+    "info": $info-color,
+    "opal": $fire-opal,
+    "coral": $fire-coral,
+    "iga-green": $bud-green,
+    "android": $android-green,
+    "carrot": $carrot-orange,
+    "carolina": $carolina-blue,
+    "aero": $aero-blue,
+    "purple": $blue-purple,
+    "grape": $glossy-grape,
+    "white": $white,
+    "gainsboro": $gainsboro,
+    "silver": $silver,
+    "garnet": $garnet
+);
+
+@each $colorName,
+$color in $colors-list {
+    .bg-#{$colorName} {
+        background-color: #{$color} !important;
+    }
+
+    .text-#{$colorName} {
+        color: #{$color} !important;
+    }
+}
+
+.bg-none,
+.background-none {
+    background-color: none !important;
+}
+
+.bg-transparent,
+.background-transparent {
+    background-color: transparent !important;
+}

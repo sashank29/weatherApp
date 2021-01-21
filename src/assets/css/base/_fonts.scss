@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "english";
+    src: url("../fonts/english/Calibri.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "english";
+    src: url("../fonts/english/CALIBRIB.TTF") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@for $i from 0 through 15 {
+    .fs-#{$i} {
+        font-size: #{1 + $i*0.2}rem;
+    }
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.text-normal {
+    font-weight: normal;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-bolder {
+    font-weight: bolder;
+}
+
+.indent {
+    text-indent: 1rem;
+}

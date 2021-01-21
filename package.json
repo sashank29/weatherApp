@@ -1,0 +1,57 @@
+{
+  "name": "weather_app",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "npm-run-all": "^4.1.2",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@types/node": "^14.0.27",
+    "@types/react": "^16.9.46",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router-dom": "5.1.5",
+    "axios": "^0.19.2",
+    "axios-retry": "^3.1.8",
+    "bootstrap": "^4.5.2",
+    "core-js": "^3.6.5",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.3.0",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^5.2.0",
+    "perfect-scrollbar": "1.4.0",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "minify-css": "node-sass src/assets/css/applicationSS.scss src/assets/css/applicationSS.min.css --output-style compressed --source-map true",
+    "watch-css": "nodemon --watch src/assets/css -e scss -x \"npm run minify-css\"",
+    "start-js": "react-scripts start",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && HTTPS=true npm start",
+    "start": "npm-run-all -p minify-css watch-css start-js",
+    "build": "npm run minify-css && react-scripts build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

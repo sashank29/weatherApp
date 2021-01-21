@@ -1,0 +1,34 @@
+@for $i from 0 through 15 {
+    .brad-#{$i} {
+        border-radius: #{$i}px;
+    }
+
+    @if($i > 0) {
+
+        @each $colorName,
+        $color in $colors-list {
+            .b-#{$i}-#{$colorName} {
+                border: #{$i}px solid #{$color};
+            }
+            .bt-#{$i}-#{$colorName} {
+                border-top: #{$i}px solid #{$color};
+            }
+            .bb-#{$i}-#{$colorName} {
+                border-bottom: #{$i}px solid #{$color};
+            }
+            .br-#{$i}-#{$colorName} {
+                border-right: #{$i}px solid #{$color};
+            }
+            .bl-#{$i}-#{$colorName} {
+                border-left: #{$i}px solid #{$color};
+            }
+        }
+    }
+}
+
+.border-none {
+    border: none !important;
+}
+.border-radius-none {
+    border-radius: none !important;
+}

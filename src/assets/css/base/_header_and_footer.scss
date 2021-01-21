@@ -1,0 +1,40 @@
+.appHeader.navbar {
+  background-color: $cello !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2), 0 2px 15px 0 rgba(0, 0, 0, 0.2);
+  .navbar-brand {
+    float: left;
+    border-right: 1px solid $gainsboro;
+    border-left: none;
+    padding-right: 10px;
+    img {
+      max-height: 65px;
+    }
+  }
+
+  .nav-link {
+    color: $gainsboro;
+    font-size: 16px;
+    font-weight: $font-weight-bold;
+
+    &.active {
+      color: $fire-opal;
+      @extend .bb-5-opal;
+    }
+  }
+}
+
+.footer {
+  // position: absolute;
+  // top: 80vh;
+  width: 100%;
+  padding-top: 3rem;
+  background-color: $cello;
+  color: #e3e3e3;
+
+  .container {
+    span.link {
+      line-height: 2.5rem;
+      font-size: 0.9rem;
+    }
+  }
+}

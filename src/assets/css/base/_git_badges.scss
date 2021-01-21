@@ -1,0 +1,71 @@
+.git-badges {
+    margin-right: $padding-base-vertical;
+    margin-top: $padding-base-vertical;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-block;
+    border-radius: 0px 4px 4px 0px;
+
+    .git-badge {
+        font-size: $font-size-base;
+        color: $white-color;
+        display: table-cell;
+        height: $line-height;
+        opacity: 0.85;
+        line-height: 21px;
+        padding: $padding-zero $padding-small-horizontal;
+        cursor: default;
+        //white-space: nowrap;
+        -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+
+        &.key {
+            border-radius: 4px 0px 0px 4px;
+            background-color: $primary; //rgba($default-color, 0.8);
+            white-space: nowrap;
+        }
+
+        &.value {
+            border-radius: 0px 4px 4px 0px;
+            background-color: $fire-opal;
+        }
+
+        &.lone-value {
+            border-radius: 4px;
+            background-color: $primary-color;
+            display: inline-table;
+            margin: 5px 5px 5px 0px;
+        }
+
+        &.badge,
+        &.badge-key {
+            border-radius: 4px 4px 4px 4px;
+            background-color: $cello; //rgba($default-color, 0.8);
+        }
+
+        &.badge-value {
+            border-radius: 4px 4px 4px 4px;
+            word-break: break-word;
+            background-color: $primary-color;
+        }
+    }
+
+    &:hover .git-badge {
+        opacity: 1.0;
+    }
+
+    .git-badge.asButton {
+        cursor: pointer !important;
+    }
+}
+
+.beta-badge {
+    background-color: $primary-color;
+    color: $gainsboro;
+    padding: 1px 3px;
+    border-radius: $border-radius-small;
+    font-weight: $font-weight-bolder;
+    font-size: 1rem;
+}

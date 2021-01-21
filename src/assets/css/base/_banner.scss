@@ -1,0 +1,30 @@
+.appBanner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 65px;
+    height: fit-content;
+    padding: 30px 60px;
+    background-color: $cello;
+    background-repeat: no-repeat;
+    // @extend .b-2-enterprise;
+
+    &>.titleHolder {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        color: $black;
+    }
+
+    &>.imageHolder{
+        img.appBannerPicture {
+            max-width: 250px;
+            max-height: 450px;
+            float: right;
+        }
+    }
+
+}

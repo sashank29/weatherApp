@@ -1,0 +1,367 @@
+$full-width: 100% !important;
+
+$fire-opal: #e15840;
+$fire-coral: #f38b8c;
+$bud-green: #79af5d;
+$android-green: #b3cf34;
+$carrot-orange: #e49343;
+$carolina-blue: #4196cb;
+$aero-blue: #81bde3;
+$blue-purple: #8776b6;
+$glossy-grape: #a494c5;
+$cello: #394e5f;
+$garnet: #932625;
+
+$silver: #f5f5f5 !default;
+$gainsboro: #e2e2e2 !default;
+$white-smoke: #c6c6c6 !default;
+$white: #ffffff !default;
+
+$azure: #4487d0 !default;
+$red: #e87272 !default;
+$green: #5fbd5e !default;
+$dark-green: #106b0f !default;
+$orange: #fe9b01 !default;
+$blue: #0776c0 !default;
+$black: #5e5e5e !default;
+
+/*      light colors         */
+
+$light-garnet: rgba($garnet, 0.4);
+$light-red: rgba($red, 0.4);
+$light-green: rgba($green, 0.4);
+$light-orange: rgba($orange, 0.4);
+$light-blue: rgba($blue, 0.4);
+$light-azure: rgba($azure, 0.4);
+$light-fire-opal: rgba($fire-opal, 0.4);
+$light-fire-coral: rgba($fire-coral, 0.4);
+$light-bud-green: rgba($bud-green, 0.4);
+$light-android-green: rgba($android-green, 0.4);
+$light-carrot-orange: rgba($carrot-orange, 0.4);
+$light-carolina-blue: rgba($carolina-blue, 0.4);
+$light-aero-blue: rgba($aero-blue, 0.4);
+$light-blue-purple: rgba($blue-purple, 0.4);
+$light-glossy-grape: rgba($glossy-grape, 0.4);
+$light-cello: rgba($cello, 0.4);
+$black-color: #333333 !default;
+$black-hr: #444444 !default;
+
+$light-gray: #e3e3e3 !default;
+$medium-gray: #dddddd !default;
+$placeholder-gray: #c3c3c3 !default;
+$medium-dark-gray: #aaaaaa !default;
+$dark-gray: #9a9a9a !default;
+
+// Gradients colors
+$tooltip-background-color: #734726;
+
+$filter-garnet: darken($garnet, 10%);
+$filter-red: darken($red, 10%);
+$filter-green: darken($green, 10%);
+$filter-orange: darken($orange, 10%);
+$filter-blue: darken($blue, 10%);
+$filter-azure: darken($azure, 10%);
+
+$none: 0 !default;
+$border: 1px solid !default;
+$border-thin: 1px !default;
+$border-thick: 2px !default;
+$border-extra-thick: 5px !default;
+
+$white-color: #ffffff !default;
+$white-bg: #ffffff !default;
+
+$silver-bg: #f5f5f5 !default;
+
+$black-bg: rgba(30, 30, 30, 0.97) !default;
+
+$transparent-bg: transparent !default;
+$default: $bud-green !default;
+$default-bg: $bud-green !default;
+$default-color: $bud-green !default;
+$default-states-color: darken($bud-green, 6%) !default;
+
+$cello: $cello !default;
+$cello-bg: $cello !default;
+$cello-color: $cello !default;
+$cello-states-color: darken($cello, 6%) !default;
+
+$cancel-bg: rgba($red, 0.7) !default;
+$cancel-color: rgba($red, 0.7) !default;
+$cancel-states-color: darken(rgba($red, 0.7), 8%) !default;
+
+$garnet: $garnet !default;
+$garnet-color: $garnet !default;
+$garnet-bg: $garnet !default;
+$garnet-states-color: darken($garnet, 5%) !default;
+
+$primary: $blue !default;
+$primary-color: $blue !default;
+$primary-bg: $blue !default;
+$primary-states-color: darken($blue, 5%) !default;
+
+$info: $aero-blue !default;
+$info-color: $aero-blue !default;
+$info-bg: $aero-blue !default;
+$info-states-color: darken($aero-blue, 6%) !default;
+
+$success: $green !default;
+$success-color: $green !default;
+$success-bg: $green !default;
+$success-states-color: darken($green, 5%) !default;
+
+$warning: $carrot-orange !default;
+$warning-color: $carrot-orange !default;
+$warning-bg: $carrot-orange !default;
+$warning-states-color: darken($carrot-orange, 7%) !default;
+
+$danger: $red !default;
+$danger-color: $red !default;
+$danger-bg: $red !default;
+$danger-states-color: darken($red, 8%) !default;
+
+$link-color: $primary !default;
+$link-disabled-color: #666666 !default;
+$link-hover-color: darken($link-color, 15%);
+
+
+//== Components
+//
+
+$padding-default-vertical: 10px !default;
+$padding-default-horizontal: 15px !default;
+
+$padding-base-vertical: 8px !default;
+$padding-base-horizontal: 16px !default;
+
+$padding-round-vertical: 8px !default;
+$padding-round-horizontal: 16px !default;
+
+$padding-simple-vertical: 9px !default;
+$padding-simple-horizontal: 16px !default;
+
+$padding-large-vertical: 14px !default;
+$padding-large-horizontal: 30px !default;
+
+$padding-small-vertical: 5px !default;
+$padding-small-horizontal: 10px !default;
+
+$padding-xs-vertical: 1px !default;
+$padding-xs-horizontal: 5px !default;
+
+$padding-xss-vertical: 3px !default;
+$padding-xss-horizontal: 3px !default;
+
+$padding-label-vertical: 2px !default;
+$padding-label-horizontal: 12px !default;
+
+$padding-btn-vertical: 11px !default;
+$padding-btn-horizontal: 40px !default;
+
+$margin-large-vertical: 30px !default;
+$margin-base-vertical: 15px !default;
+
+$margin-base: 15px !default;
+
+$padding-zero: 0px !default;
+$margin-zero: 0px !default;
+
+$margin-bottom: 0 0 10px 0 !default;
+
+$border-radius: 0.25rem !default;
+$border-radius-xl: 0.875rem !default;
+$border-radius-lg: 0.4285rem !default;
+$border-radius-sm: 0.2857rem !default;
+$border-radius-xs: 0.1428rem !default;
+$border-radius-xs: 25% !default;
+$border-radius-small: 3px !default;
+$border-radius-base: 4px !default;
+$border-radius-large: 6px !default;
+$border-radius-extreme: 10px !default;
+
+$border-radius-large-top: $border-radius-large $border-radius-large 0 0 !default;
+$border-radius-large-bottom: 0 0 $border-radius-large $border-radius-large !default;
+
+$btn-round-radius: 30px !default;
+
+$height-base: 40px !default;
+
+$font-size-base: 14px !default;
+$font-size-xs: 8px !default;
+$font-size-small: 12px !default;
+$font-size-medium: 16px !default;
+$font-size-large: 18px !default;
+$font-size-large-navbar: 20px !default;
+
+$font-size-h1: 52px !default;
+$font-size-h2: 36px !default;
+$font-size-h3: 28px !default;
+$font-size-h4: 22px !default;
+$font-size-h5: 18px !default;
+$font-size-h6: 14px !default;
+$font-paragraph: 16px !default;
+$font-size-navbar: 16px !default;
+$font-size-small: 12px !default;
+
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-semi: 500 !default;
+$font-weight-bold: 600 !default;
+$font-weight-bolder: 700 !default;
+$font-weight-bolderst: 800 !default;
+
+$line-height-general: 1.5 !default;
+$line-height: 20px !default;
+$line-height-lg: 54px !default;
+
+$sidebar-width: calc(100% - 260px) !default;
+
+$border-radius-top: 10px 10px 0 0 !default;
+$border-radius-bottom: 0 0 10px 10px !default;
+
+$dropdown-shadow: 1px 2px 3px rgba(0, 0, 0, 0.125);
+
+$general-transition-time: 300ms !default;
+
+$slow-transition-time: 370ms !default;
+$dropdown-coordinates: 29px -50px !default;
+
+$fast-transition-time: 150ms !default;
+$ultra-fast-transition-time: 60ms !default;
+
+$select-coordinates: 50% -40px !default;
+
+$transition-linear: linear !default;
+$transition-bezier: cubic-bezier(0.34, 1.61, 0.7, 1) !default;
+$transition-ease: ease 0s;
+$transition-ease-in: ease-in !default;
+$transition-ease-out: ease-out !default;
+
+$navbar-padding-a: 10px 15px;
+$navbar-margin-a: 10px 3px;
+
+$padding-social-a: 10px 5px;
+
+$navbar-margin-a-btn: 15px 3px;
+$navbar-margin-a-btn-round: 16px 3px;
+
+$navbar-padding-a-icons: 6px 15px;
+$navbar-margin-a-icons: 6px 3px;
+
+$navbar-padding-brand: 15px 15px;
+$navbar-margin-brand: 7px 0px;
+
+$navbar-margin-brand-icons: 12px auto;
+
+$navbar-margin-btn: 10px 3px;
+
+$height-icon: 64px !default;
+$width-icon: 64px !default;
+$padding-icon: 12px !default;
+$border-radius-icon: 15px !default;
+
+$size-icon: 64px;
+$size-icon-sm: 32px;
+
+$height-icon-sm: 32px;
+$width-icon-sm: 32px;
+$padding-icon-sm: 4px;
+$border-radius-icon-sm: 7px;
+
+$height-icon-message: 40px;
+$width-icon-message: 40px;
+
+$height-icon-message-sm: 20px;
+$width-icon-message-sm: 20px;
+
+$topbar-x: topbar-x !default;
+$topbar-back: topbar-back !default;
+$bottombar-x: bottombar-x !default;
+$bottombar-back: bottombar-back !default;
+
+// Sidebar
+$sidebar-mini-width: calc(100% - 80px) !default;
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs: 480px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min: $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone: $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm: 768px !default;
+$screen-sm-min: $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet: $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md: 992px !default;
+$screen-md-min: $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop: $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg: 1200px !default;
+$screen-lg-min: $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop: $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max: ($screen-sm-min - 1) !default;
+$screen-sm-max: ($screen-md-min - 1) !default;
+$screen-md-max: ($screen-lg-min - 1) !default;
+
+// buttons
+$input-btn-padding-y: 0.5rem !default;
+$input-btn-padding-x: 0.7rem !default;
+
+$input-btn-focus-width: 0 !default;
+$input-btn-focus-box-shadow: none !default;
+
+$input-btn-padding-y-sm: 0.25rem !default;
+$input-btn-padding-x-sm: 0.5rem !default;
+$input-btn-line-height-sm: 1.35 !default;
+
+$input-btn-padding-y-lg: 0.875rem !default;
+$input-btn-padding-x-lg: 1rem !default;
+$input-btn-line-height-lg: 1.35 !default;
+
+$input-btn-border-width: 1px !default;
+
+$input-btn-font-size-sm: 0.75rem !default;
+$input-btn-font-size: 0.875rem !default;
+$input-btn-font-size-lg: 0.875rem !default;
+$btn-padding-y: 11px !default;
+$btn-padding-x: 40px !default;
+$btn-line-height: $line-height !default;
+
+$btn-padding-y-sm: 5px !default;
+$btn-padding-x-sm: 15px !default;
+$btn-line-height-sm: $input-btn-line-height-sm !default;
+
+$btn-padding-y-lg: 15px !default;
+$btn-padding-x-lg: 48px !default;
+$btn-line-height-lg: $input-btn-line-height-lg !default;
+
+$btn-border-width: $input-btn-border-width !default;
+
+$btn-font-size-lg: 1em !default;
+$btn-font-weight: 600 !default;
+$btn-text-transform: uppercase !default;
+$btn-letter-spacing: 0.025em !default;
+$btn-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+$btn-hover-box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1),
+  0 3px 6px rgba(0, 0, 0, 0.08);
+$btn-focus-box-shadow: $btn-hover-box-shadow !default;
+$btn-focus-width: $input-btn-focus-width !default;
+
+$btn-active-box-shadow: none !default;
+$btn-round-radius: 30px !default;

@@ -1,0 +1,11 @@
+.breadcrumb {
+    background-color: $white;
+    padding-left: 21px;
+    .breadcrumb-item {
+        font-weight: bold;
+        font-size: 14px;
+        &+.breadcrumb-item::before {
+            padding: 0 0.5rem;
+        }
+    }
+}
