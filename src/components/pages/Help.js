@@ -1,5 +1,6 @@
 import React from 'react';
 import { Jumbotron, Alert } from 'react-bootstrap';
+import Icon from '../utils/Icon';
 
 import config from '../../modules/config.json';
 import response from './response.json';
@@ -14,6 +15,17 @@ export const Help = () => {
             <li>Display the data as a card <code className="bg-gray pr-2 pl-2">*appended</code> to the page</li>
             <li>Use a reusable component to display weather data</li>
             <li>Display appropriate icon based on the weather condition</li>
+        </ul>
+        <Alert variant="primary fs-1">Available Icons</Alert>
+        <ul className="fs-1">
+            <Icon icon="cloud-sun" size="2x" className="mr-4" title="cloud-sun"/>
+            <Icon icon="cloud-showers-heavy" size="2x" className="mr-4" title="cloud-showers-heavy"/>
+            <Icon icon="bolt" size="2x" className="mr-4" title="bolt"/>
+            <Icon icon="wind" size="2x" className="mr-4" title="wind"/>
+            <Icon icon="smog" size="2x" className="mr-4" title="smog"/>
+            <Icon icon="cloud" size="2x" className="mr-4" title="cloud"/>
+            <Icon icon="sun" size="2x" className="mr-4" title="sun"/>
+            <Icon icon="water" size="2x" className="mr-4" title="water"/>
         </ul>
         <Alert variant="primary fs-1">API Details</Alert>
         <ul className="fs-1">
