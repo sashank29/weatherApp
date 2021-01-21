@@ -13,7 +13,7 @@ Objective is to test the knowledge in the following areas
 - Create a Header, footer, stats card and chart card components as reusable components
 - Using the freehand design provided as guide, develop an App dashboard consuming resuable components
 
-api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key} is the API url that you would need to call for obtaining the data.
+[api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}](https://api.openweathermap.org) is the API url that you would need to call for obtaining the data.
 
 ![](./wireframe.png)
 

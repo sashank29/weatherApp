@@ -20,7 +20,7 @@ export const Help = () => {
             <li>API key will be provided during the session</li>
             <li>Must use <code>/modules/utils.js</code> for calling API</li>
             <li>API: <a href={config.API}>{config.API}?q=&lt;city&gt;&appid=&lt;secret_key&gt;</a></li>
-            <li>You can also pass <code>unit=&lt;unit&gt;</code> query parameter as well to the API</li>
+            <li>You can also pass <code>units=&lt;unit&gt;</code> query parameter as well to the API</li>
             <li>
                 Example of API Response:<br/>
                 <pre className="bg-gray p-3">
