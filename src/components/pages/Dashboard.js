@@ -1,13 +1,28 @@
-import React from 'react';
-import { Jumbotron } from 'react-bootstrap';
+import React, { useState } from "react";
+import SearchBar from "../searchBar";
+import InfoCardDeck from "../infoCardDeck";
 
 export const Dashboard = () => {
-    return <Jumbotron className="bg-white b-1-cello brad-5 text-cello">
-        <h1>Hello Developer,</h1>
-        <p className="fs-1">
-            We are glad you are here.
-            This is a live coding session as part of the interview process.
-        </p>
-        <br/>
-    </Jumbotron>
-}
+  const [weatherData, setWeatherData] = useState([]);
+
+  const updateWeatherInfo = (data) => {
+    const filteredList = weatherData.filter((info) => info.name !== data.name);
+    filteredList.push(data);
+    setWeatherData([...filteredList]);
+  };
+
+  const deleteWeatherInfo = (id) => {
+    const filteredList = weatherData.filter((info) => info.id !== id);
+    setWeatherData([...filteredList]);
+  };
+
+  return (
+    <div>
+      <SearchBar updateWeatherInfo={updateWeatherInfo} />
+      <InfoCardDeck
+        weatherData={weatherData}
+        closeHandler={deleteWeatherInfo}
+      />
+    </div>
+  );
+};
