@@ -1,4 +1,3 @@
-import react from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Icon from "../utils/Icon";
